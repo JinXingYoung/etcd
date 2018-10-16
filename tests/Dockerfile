@@ -1,4 +1,4 @@
-FROM 100.109.166.42:20202/op_svc_swr/buildworker:1.9.28
+FROM 100.109.166.42:20202/op_svc_swr/ubuntu:latest
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
